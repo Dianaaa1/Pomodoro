@@ -1,0 +1,49 @@
+#wrapper {
+  background-color: lightsteelblue;
+  margin: 0px;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#start {
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 80%;
+}
+
+#slider {
+  background-color: black;
+  height: 4px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 10%;
+  background-color: gray;
+  border: ridge 2px;
+  cursor: pointer;
+  border: none;
+  width: 120px;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-style: inherit;
+  color: white;
+}
+
+#clock {
+  background-color: lightgray;
+  margin: 30px 400px 50px 400px;
+  padding: 0 0 20px 30px;
+  border-radius: 10%;
+}
+
+#output {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150px;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=Pomodoro.css.map */
