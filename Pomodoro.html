@@ -1,28 +1,54 @@
 <html>
 <head>
-    <script src="./Pomodoro.js" ></script>
+    <script src="./Pomodoro.js"></script>
     <link rel="stylesheet" href="./Pomodoro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-    <div id="wrapper">
-        Pomodoro
-        <div id="slider"></div>
-        <div id="clock">
-            <div class="buts">
-                <button onclick="x.restart()">
-                    Restart 
-                </button> &nbsp &nbsp  
-                <button onclick="x.stop()">
-                    Stop
-                </button>
+<body onload="document.getElementById('output').innerHTML=x.get(x.time)">
+    <div class="wrapper">
+        <div class="header">Pomodoro</div>
+        <div class="slider" id="slider"></div>
+        <div class="clock" id="clock">
+            <div class="container">
+                <div class="clock__buts">
+                    <button onclick="x.restart()">
+                        Restart
+                    </button> 
+                    <button onclick="x.stop()">
+                        Stop
+                    </button>
+                    <button onclick="x.break()">Break</button>
+                </div>
+                <div class="clock__output" id="output"> </div>
+                <div class="clock__buts">
+                    <button id="start" onclick="x.start()">
+                        Start
+                    </button>
+                </div>
             </div>
-            <div id="output" > 25 : 00</div>
-            <div class="buts" >
-                <button id="start" onclick="x.start()">
-                    Start
-                </button>
+        </div>
+        <div class="abouttechnique">
+            <div class="container">
+                <div class="abouttechnique__title">What Is the Pomodoro Technique?</div>
+                <div class="abouttechnique__text">
+                    <p>
+                        The Pomodoro Technique is a time management system that encourages people to work
+                        with the time they have—rather than against it. Using this method, you break your workday
+                        into 25-minute chunks separated by five-minute breaks. These intervals are referred to as
+                        pomodoros. After about four pomodoros, you take a longer break of about 15 to 20 minutes.
+                    </p>
+                    <p>
+                        The idea behind the technique is that the timer instills a sense of urgency. Rather than
+                        feeling like you have endless time in the workday to get things done and then ultimately
+                        squandering those precious work hours on distractions, you know you only have 25 minutes
+                        to make as much progress on a task as possible.
+                    </p>
+                </div>
             </div>
+        </div>
+        <div class="footer">
+            <a href="#">узнать больше >></a>
         </div>
     </div>
 </body>

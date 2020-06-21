@@ -9,8 +9,8 @@ function Timer(obj){
     this.start=()=>{
     this.stop();
     this.tick=()=>{
-    this.time=this.time-1000;
     document.getElementById("output").innerHTML=this.get(this.time);
+    this.time=this.time-1000;
     this.slider=()=>{
         document.getElementById('slider').style.width=this.time/(obj.timeWork*60*1000)*100+'%';
     }
@@ -30,7 +30,13 @@ function Timer(obj){
     }
     this.tick();
     }
-    
+    this.break=()=>{
+        this.stop();
+        this.time=-1;
+        this.breakSession=false;
+        this.start();
+    }
+
     this.restart=()=>{
         this.stop();
       this.time=obj.timeWork*60*1000;
@@ -48,7 +54,7 @@ function Timer(obj){
         }
     }
     let x=new Timer({
-    timeWork: 25,
-    timeBreak: 5,
+    timeWork: 30,
+    timeBreak: 7,
     });
     

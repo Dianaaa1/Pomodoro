@@ -1,9 +1,17 @@
-#wrapper {
-  background-color: lightsteelblue;
-  margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
+  margin: 0;
   width: 100%;
+}
+
+.wrapper {
+  background-color: lightsteelblue;
+  width: 100%;
+}
+
+.header {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   padding-top: 20px;
   padding-bottom: 40px;
   text-align: center;
@@ -15,12 +23,13 @@
   border-radius: 80%;
 }
 
-#slider {
+.slider {
   background-color: black;
   height: 4px;
 }
 
 button {
+  margin-right: 20px;
   padding: 8px;
   border-radius: 10%;
   background-color: gray;
@@ -34,16 +43,88 @@ button {
   color: white;
 }
 
-#clock {
-  background-color: lightgray;
-  margin: 30px 400px 50px 400px;
-  padding: 0 0 20px 30px;
-  border-radius: 10%;
+button:active, button:focus {
+  outline: none;
 }
 
-#output {
+button:active {
+  background-color: #b6b1b1;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.clock {
+  padding: 40px 20px;
+}
+
+.clock .container {
+  background-color: lightgray;
+  border-radius: 10%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.clock__output {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 150px;
   font-weight: bolder;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.abouttechnique {
+  background-color: #f3f3f3;
+  font-family: "Raleway", sans-serif;
+  padding: 50px 30px;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.abouttechnique__title {
+  font-style: oblique;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.abouttechnique p {
+  padding-top: 30px;
+}
+
+.footer {
+  background-color: #7d91aa;
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 645px) {
+  .clock__output {
+    font-size: 60px;
+  }
+  button {
+    font-size: 15px;
+  }
+  #start {
+    font-size: 20px;
+  }
+  .abouttechnique {
+    font-size: 15px;
+  }
+  .abouttechnique__title {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=Pomodoro.css.map */
